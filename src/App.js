@@ -3,6 +3,7 @@ import React from "react";
 import Statistics from "./Components/Statistics/Statistics";
 import Section from "./Components/Section/Section";
 import FeedbackOptions from "./Components/FeedbackOptions/FeedbackOptions";
+import Notification from "./Components/Notification/Notification";
 
 const good = "good";
 const neutral = "neutral";
@@ -49,7 +50,7 @@ class App extends React.Component {
           <FeedbackOptions
             options={feedbacks}
             onFeedbackBtnClick={this.onFeedbackBtnClick}
-          ></FeedbackOptions>
+          />
         </Section>
 
         <Section title="Статистика">
@@ -60,7 +61,7 @@ class App extends React.Component {
               calculateTotalCount={this.calculateTotalCount}
             />
           ) : (
-            <p>Not feedback given</p>
+            <Notification message="Not feedback given" />
           )}
         </Section>
       </div>
