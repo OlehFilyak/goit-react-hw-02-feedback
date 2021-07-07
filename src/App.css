@@ -1,0 +1,14 @@
+li {
+  list-style-type: none;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+}
+
+.wrapper {
+  max-width:600px;
+  text-align: center;
+}
+
+.statistic-wrapper {
+  text-align: left;
+}
