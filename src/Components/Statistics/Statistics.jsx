@@ -2,7 +2,7 @@ import css from "./Statistics.module.css";
 function Statistics({ good, renderStatisticsItem, calculateTotalCount }) {
   return (
     <div>
-      <ul className="statistic-wrapper">
+      <ul className={css.statisticWrapper}>
         {renderStatisticsItem()}
         {/* {feedbacks.map((feedback) => (
           <li key={feedback} className="statistic-item">
