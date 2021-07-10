@@ -1,4 +1,7 @@
+import PropTypes from "prop-types";
+
 import css from "./Statistics.module.css";
+
 function Statistics({ good, renderStatisticsItem, calculateTotalCount }) {
   return (
     <div>
@@ -22,5 +25,11 @@ function Statistics({ good, renderStatisticsItem, calculateTotalCount }) {
     </div>
   );
 }
+
+Statistics.propTypes = {
+  good: PropTypes.number.isRequired,
+  renderStatisticsItem: PropTypes.func.isRequired,
+  calculateTotalCount: PropTypes.func.isRequired,
+};
 
 export default Statistics;

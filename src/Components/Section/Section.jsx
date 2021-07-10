@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 function Section({ title, children }) {
   return (
     <section title={title}>
@@ -11,4 +12,8 @@ function Section({ title, children }) {
   );
 }
 
+Section.propTypes = {
+  title: PropTypes.string,
+  children: PropTypes.node.isRequired,
+};
 export default Section;
